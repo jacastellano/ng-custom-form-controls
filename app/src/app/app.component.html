@@ -309,7 +309,11 @@
 <div class="content" role="main">
 
   <!-- Editor -->
-  <app-rich-text-editor></app-rich-text-editor>
+  <form [formGroup]="form">
+    <app-rich-text-editor formControlName="editor"></app-rich-text-editor>
+  </form>
+
+  <pre>{{ form.value | json }}</pre>
 
   <!-- Footer -->
   <footer>
