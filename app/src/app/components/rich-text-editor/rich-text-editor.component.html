@@ -1,1 +1,2 @@
-<div #richtexteditor class="rich-text-editor" contenteditable="true"></div>
+<div #richtexteditor class="rich-text-editor" contenteditable="true" (input)="propagateChange($event.target.innerHTML)">
+</div>
