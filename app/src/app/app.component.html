@@ -312,7 +312,7 @@
   <form [formGroup]="form">
     <app-rich-text-editor formControlName="editor"></app-rich-text-editor>
   </form>
-
+  <p *ngIf="!form.valid">Status is invalid!</p>
   <pre>{{ form.value | json }}</pre>
 
   <!-- Footer -->
