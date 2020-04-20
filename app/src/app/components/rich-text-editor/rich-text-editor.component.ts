@@ -55,4 +55,8 @@ export class RichTextEditorComponent implements OnInit, AfterViewInit, ControlVa
     this.propagateTouched();
   }
 
+  public onKeydown($event) {
+    console.log($event);
+  }
+
 }

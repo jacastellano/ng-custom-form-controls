@@ -1,2 +1,3 @@
-<div #richtexteditor class="rich-text-editor" contenteditable="true" (input)="onChange($event)" (focus)="onFocus()">
+<div #richtexteditor class="rich-text-editor" contenteditable="true" (input)="onChange($event)" (focus)="onFocus()"
+    (keydown)="onKeydown($event)">
 </div>
